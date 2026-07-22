@@ -21,3 +21,13 @@ variable "instance_types" {
   type = list(string)
   default = ["t3.small"]
 }
+
+variable "mongodb_uri" {
+  type      = string
+  sensitive = true
+}
+
+variable "jwt_secret" {
+  type      = string
+  sensitive = true
+}
